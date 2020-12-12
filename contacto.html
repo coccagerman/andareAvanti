@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hablá con nosotros. Por ventas, consultas o cualquier cosa que nos quieras decir, estamos acá.">
+    <meta name="keywords" content="cerveza, artesanal, argentina, beer, craft, andare, avanti, contacto, whatsapp, mail, teléfono">
+    <title>Andare Avanti - Contacto</title>
+    <link rel="icon" href="imagenes/icono.webp">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/898629f073.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--------------------- NAVBAR --------------------->
+
+    <header>
+        <a href="#menu">
+            <img src="imagenes/menu-icon-open.webp" alt="Abrir menú" class="icon open">
+        </a>
+
+        <a href="index.html">
+            <img src="imagenes/logo1.webp" class="logo1" alt="Logo de la marca">
+        </a>
+
+        <nav id="menu">
+            <a href="#" class="icon">
+                <img src="imagenes/menu-icon-close.webp" alt="Cerrar menú" class="icon close">
+            </a>
+
+            <ul class="nav-list">
+                <li><a href="index.html" class="botones">Inicio</a></li>
+                <li><a href="nuestrascervezas.html" class="botones">Nuestras cervezas</a></li>
+                <li><a href="nosotros.html" class="botones">Nosotros</a></li>
+                <li><a href="merchandising.html" class="botones">Merchandising</a></li>
+                <li><a href="contacto.html" class="botones active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo">Hablá con nosotros</h1>
+        <p class="subtitulo">Por ventas, consultas o cualquier otra cosa que nos quieras decir, completá el siguiente formulario o
+            mandanos un whatsapp.</p>
+
+        <div class="container-flx container-form">
+                <!--------------------- IMAGEN DE FONDO --------------------->
+            <div class="background-img  wow animate__animated animate__bounceInLeft"></div>
+                <!--------------------- FORMULARIO --------------------->
+            <form action="#" method="get" class=" wow animate__animated animate__bounceInRight">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Nombre" id="nombre">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="Teléfono" id="telefono">
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email">
+
+                <label for="motivo">Motivo</label>
+                <select id="motivo">
+                    <option value="Ventas">Ventas</option>
+                    <option value="Otros">Otras consultas</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+
+        </div>
+    </main>
+                <!--------------------- FOOTER --------------------->
+    <footer>
+        <a href="index.html"><img src="imagenes/logo2.webp" class="logo2" alt="Logo de la marca."></a>
+        <div>
+            <a href="https://instagram.com/andareavantibrewing?igshid=1c6f301ofbyp6" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Andare-Avanti-Brewing-100218008562808/" target="_blank"><i
+                    class="fab fa-facebook-square"></i></a>
+        </div>
+        <div>
+            <p>Buenos Aires, Argentina.</p>
+            <p>Copyright Germán Cocca, 2020.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
