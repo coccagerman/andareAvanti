@@ -1,0 +1,80 @@
+/*------------------- CONTAINERS Y GALERIAS (Páginas nosotros, cervezas y merchandising) ------------------- */
+
+.container {
+background: #c5c5c5;
+margin: 2em 0;
+padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: .5em;
+    }
+
+    p {
+    max-width: 50em;
+    text-align: center;
+    }
+}
+
+.container-flx {
+margin: 0 auto;
+max-width: 1200px;
+display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .txt {
+    max-width: 750px;
+    width: 60%;
+    min-width: 350px;
+    }
+
+    p{
+    font-size: 1.1em;
+    line-height: 1.7em;
+    padding: 1em;
+    }
+}
+
+
+
+.reverse {
+display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.galeria{
+display: flex;
+}
+
+.img {
+width: 350px;
+height: 300px;
+margin: auto;
+border-radius: .5rem;
+}
+
+.galeria__foto-container {
+background: white;
+padding: 1rem;
+margin: 2rem 1rem;
+border-radius: 1rem;
+text-align: center;
+transition: .5s;
+
+    h3 {
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    }
+
+    &:hover {
+    transform: scale(1.05);
+    }
+}

@@ -1,0 +1,116 @@
+/*------------------- INDEX - HERO ------------------- */
+
+.hero{
+background: url("../imagenes/index_hero-img.webp") no-repeat 50%;
+background-size: cover;
+height: 500px;
+position: relative;
+margin-bottom: .5rem;
+
+    .hero-text > * {
+    z-index: 2;
+    }
+
+    .hero-text{
+    height: 100%;
+    display: grid;
+    place-content: center;
+    
+        .hero-link{
+        margin: auto;
+        margin-top: 2rem;
+        }
+    
+        h1 {
+        font-size: 4rem;
+        color: white;
+        width: 40rem;
+        }
+    }   
+
+    &::after {
+    content: "";
+    position: absolute;
+        top: 0;
+        left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .3;
+    z-index: 1;
+    }
+}
+
+/*------------------- INDEX - VENTAS ------------------- */
+
+.ventas{
+background-color: #c5c5c5;
+margin-top: .5rem;
+padding: 1.5rem 4rem 3rem 4rem;
+display: flex;
+    justify-content: center;
+
+    h3 {
+    text-align: center;
+    font-size: 2rem;
+    }
+
+    .puntos-venta, .adomicilio {
+    padding: 1.5rem;
+    }
+
+    .puntos-venta iframe {
+    width: 35rem;
+    height: 20rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    }
+
+    .adomicilio-iconos {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(2,1fr);
+    gap: 0 5rem;
+        
+        div {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        }
+        
+        div img {
+        width: 5.5rem;
+        margin-top: 1rem;
+        }
+        
+        div p {
+        font-size: 1rem;
+        }
+    }
+}
+
+/*------------------- INDEX - REMERAS ------------------- */
+
+.index__final-container{
+background: url("../imagenes/Index-shirt_background2.webp") no-repeat 50%;
+background-size: cover;
+background-position: left;
+height: 900px;
+
+    .index__final-content{
+    display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    margin-right: 10rem;
+    text-align: right;
+    padding-top: 10rem;
+
+        p{
+        font-size: 1.5rem;
+        }
+
+        .index__final-content-btn{
+        padding-top: 5rem;
+        }
+    }
+}

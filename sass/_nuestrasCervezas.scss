@@ -1,0 +1,45 @@
+  /*------------------- PAGINA NUESTRAS CERVEZAS ------------------- */
+
+.nuestrasCervezas_main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  /*------------------- PAGINA NUESTRAS CERVEZAS - GALERIA DE FOTOS ------------------- */
+
+.galeria .img-1 {
+background: url("../imagenes/Cervezas/cervezas_clasicas-1.webp") no-repeat 50%;
+background-size: cover;}
+
+.galeria .img-2 {
+background: url("../imagenes/Cervezas/cervezas_clasicas-2.webp") no-repeat 50%;
+background-size: cover;}
+
+.galeria .img-3 {
+background: url("../imagenes/Cervezas/cervezas_clasicas-3.webp") no-repeat 50%;
+background-size: cover;}
+
+.galeria .img-4 {
+background: url("../imagenes/Cervezas/cervezas-estacionales1.webp") no-repeat 50%;
+background-size: cover;}
+
+.galeria .img-5 {
+background: url("../imagenes/Cervezas/cervezas-estacionales2.webp") no-repeat 50%;
+background-size: cover;}
+
+.galeria .img-6 {
+background: url("../imagenes/Cervezas/cervezas-estacionales3.webp") no-repeat 50%;
+background-size: cover;}
+
+.galeria .img-7 {
+background: url("../imagenes/Cervezas/cervezas_especiales-1.webp") no-repeat 50%;
+background-size: cover;}
+
+.galeria .img-8 {
+background: url("../imagenes/Cervezas/cervezas_especiales-2.webp") no-repeat 50%;
+background-size: cover;}
+
+.galeria .img-9 {
+background: url("../imagenes/Cervezas/cervezas_especiales-3.webp") no-repeat 50%;
+background-size: cover;}

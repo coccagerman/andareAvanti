@@ -1,0 +1,27 @@
+/*------------------- NAVBAR ------------------- */
+
+header {
+background-color: white;
+margin: auto;
+max-width: 1500px;
+display: flex;
+    align-items: center;
+    justify-content: center;
+
+  .logo1 {
+  width: 16rem;
+  margin: .5rem 5rem 0 0;
+  }
+
+  .nav-list {
+  list-style: none;
+  display: flex;
+    a {
+    font-size: 1rem;
+    }
+  }
+
+  .icon {
+  display: none;
+  }
+}

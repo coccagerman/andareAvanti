@@ -1,0 +1,59 @@
+  /*------------------- PAGINA CONTACTO ------------------- */
+
+.container-form {
+max-width: 1200px;
+margin: 2rem auto;
+
+    .background-img {
+    background: url("../imagenes/contacto_foto2.webp") no-repeat 50%;
+    background-size: contain;
+    width: 50%;
+    height: 560px;
+    }
+
+    form {
+    margin: 0 auto;
+    width: 28rem;
+    max-width: 1000px;
+    display: flex;
+        flex-direction: column;
+
+        label {
+        margin: 1rem 0 .5rem;
+        padding-left: .8rem;
+        font-family: 'Poppins', sans-serif;
+        }
+
+        input {
+        font-size: .9rem;
+        padding: .5rem 1rem;
+        border: 1px solid #424242;
+        border-radius: .8rem;
+        font-family: 'Open Sans', sans-serif;
+        }
+
+        select {
+        font-size: .9rem;
+        padding: .5rem 1rem;
+        border: 1px solid #424242;
+        border-radius: .8rem;
+        font-family: 'Open Sans', sans-serif;
+        }
+
+        textarea {
+        resize: none;
+        font-size: .9rem;
+        padding: .5rem 1rem;
+        border: 1px solid #424242;
+        border-radius: .8rem;
+        height: 100px;
+        font-family: 'Open Sans', sans-serif;
+        }
+
+        input[type=submit] {
+        @extend .botones;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        }
+    }
+}

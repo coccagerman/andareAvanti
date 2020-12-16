@@ -1,0 +1,76 @@
+/*------------------- PÁGINA NOSOTROS ------------------- */
+
+/*------------------- GALERÍAS DE FOTOS ------------------- */
+
+.container-flx .img-1 {
+background: url("../imagenes/nosotros_section1-img1.webp") no-repeat 50%;
+background-size: cover;
+}
+
+.container-flx .img-2 {
+background: url("../imagenes/nosotros_section1-img2.webp") no-repeat 50%;
+background-size: cover;
+}
+
+.container-flx .img-3 {
+background: url("../imagenes/nosotros_section1-img3.webp") no-repeat 50%;
+background-size: cover;
+}
+
+.container-flx .img-4 {
+background: url("../imagenes/nosotros_section1-img4.webp") no-repeat 50%;
+background-size: cover;
+}
+
+.container-flx .img-5 {
+background: url("../imagenes/nosotros_section1-img5.webp") no-repeat 50%;
+background-size: cover;
+}
+
+.container-flx .img-6 {
+background: url("../imagenes/nosotros_section1-img6.webp") no-repeat 50%;
+background-size: cover;
+}
+
+/*------------------- SECCIÓN NUESTRA CULTURA ------------------- */
+
+.container-nuestraCultura {
+
+    .container_spotify{ 
+        p {
+        padding: 0;
+        width: 22rem;
+        }
+
+        .spotify {
+        display: block;
+        margin: 1rem auto 0 auto;
+        height: 22rem;
+        }
+    }
+
+    .container_cultura {
+    padding-left: 5rem;
+    align-self: flex-start;
+
+        h2 {
+        text-align: left;
+        }
+
+        p {
+        padding: 0 3rem 1.3rem 0;
+        text-align: left;
+        width: 45rem;
+        }
+
+        a{
+        margin-left: 0;
+        }
+    }
+}
+
+// REVISAR - Generar margen de botones (se solapa con margen creado en clase "botones")
+.container_cultura-txt_ultimoP {
+    margin-bottom: 1.6rem;
+}
+

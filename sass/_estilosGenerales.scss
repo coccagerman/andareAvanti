@@ -1,0 +1,60 @@
+/*------------------- ESTILOS GENERALES ------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@800&display=swap');
+
+/*------------------- RESET ------------------- */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body
+{
+overflow-x: hidden;
+width: 100%;
+}
+
+/*------------------- TEXTO GENERAL ------------------- */
+
+h1, h2, h3, a{
+font-family: 'Poppins', sans-serif;
+}
+
+p{
+font-family: 'Open Sans', sans-serif;
+font-size: 1.2rem;
+}
+
+.titulo {
+font-size: 3rem;
+text-align: center;
+}
+
+.subtitulo {
+text-align: center;
+}
+
+/*------------------- BOTONES ------------------- */
+
+.botones{
+font-size: 1.3rem;
+margin: 1em;
+background-color:white;
+text-decoration: none;
+padding: 0.5rem;
+color:black;
+transition: color 0.35s ease-in;
+transition: background-color 0.35s ease-in;
+
+    &:hover{
+    background-color: black;
+    color: white;
+    }
+}
+
+.active{
+background-color:#ffc71f;
+}
+

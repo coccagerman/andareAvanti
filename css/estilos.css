@@ -43,7 +43,6 @@ p {
   transition: color 0.35s ease-in;
   transition: background-color 0.35s ease-in;
 }
-
 .botones:hover, .container-form form input[type=submit]:hover {
   background-color: black;
   color: white;
@@ -80,22 +79,15 @@ p {
   justify-content: space-around;
   align-items: center;
 }
-.container-flx p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-  padding: 1em;
-}
 .container-flx .txt {
   max-width: 750px;
   width: 60%;
   min-width: 350px;
 }
-
-.img {
-  width: 350px;
-  height: 300px;
-  margin: auto;
-  border-radius: 0.5rem;
+.container-flx p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  padding: 1em;
 }
 
 .reverse {
@@ -107,6 +99,13 @@ p {
 
 .galeria {
   display: flex;
+}
+
+.img {
+  width: 350px;
+  height: 300px;
+  margin: auto;
+  border-radius: 0.5rem;
 }
 
 .galeria__foto-container {
@@ -121,7 +120,6 @@ p {
   margin-top: 0.5rem;
   font-size: 1.5rem;
 }
-
 .galeria__foto-container:hover {
   transform: scale(1.05);
 }
@@ -129,24 +127,25 @@ p {
 /*------------------- NAVBAR ------------------- */
 header {
   background-color: white;
+  margin: auto;
+  max-width: 1500px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
-header ul {
-  list-style: none;
-  display: flex;
+  justify-content: center;
 }
 header .logo1 {
   width: 16rem;
-  margin-left: 0;
+  margin: 0.5rem 5rem 0 0;
 }
-header .icon {
-  display: none;
+header .nav-list {
+  list-style: none;
+  display: flex;
 }
 header .nav-list a {
   font-size: 1rem;
-  margin: 1.25rem;
+}
+header .icon {
+  display: none;
 }
 
 /*------------------- FOOTER ------------------- */
@@ -155,14 +154,14 @@ footer {
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 footer .logo2 {
   width: 14rem;
-  margin: 0.5rem;
+  margin: 0.5rem 10rem 0 0;
 }
 footer i {
-  font-size: 34px;
+  font-size: 2.5rem;
   color: white;
   transition: color 0.3s ease-in;
   padding: 0.5rem;
@@ -172,7 +171,7 @@ footer i:hover {
 }
 footer p {
   font-size: 1rem;
-  margin: 0 0.5rem;
+  margin: 0 0.5rem 0 10rem;
 }
 
 /*------------------- INDEX - HERO ------------------- */
@@ -193,10 +192,10 @@ footer p {
 }
 .hero .hero-text .hero-link {
   margin: auto;
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 .hero .hero-text h1 {
-  font-size: 4em;
+  font-size: 4rem;
   color: white;
   width: 40rem;
 }
@@ -215,9 +214,10 @@ footer p {
 /*------------------- INDEX - VENTAS ------------------- */
 .ventas {
   background-color: #c5c5c5;
-  display: flex;
   margin-top: 0.5rem;
   padding: 1.5rem 4rem 3rem 4rem;
+  display: flex;
+  justify-content: center;
 }
 .ventas h3 {
   text-align: center;
@@ -236,7 +236,7 @@ footer p {
   margin-top: 1.5rem;
   display: grid;
   grid-template: repeat(3, 1fr)/repeat(2, 1fr);
-  gap: 0 5em;
+  gap: 0 5rem;
 }
 .ventas .adomicilio-iconos div {
   display: grid;
@@ -377,25 +377,29 @@ footer p {
 }
 
 /*------------------- SECCIÓN NUESTRA CULTURA ------------------- */
-.container-nuestraCultura {
-  align-items: flex-start;
-}
 .container-nuestraCultura .container_spotify p {
   padding: 0;
   width: 22rem;
 }
 .container-nuestraCultura .container_spotify .spotify {
   display: block;
-  margin: 1rem auto;
-  height: 20rem;
+  margin: 1rem auto 0 auto;
+  height: 22rem;
+}
+.container-nuestraCultura .container_cultura {
+  padding-left: 5rem;
+  align-self: flex-start;
+}
+.container-nuestraCultura .container_cultura h2 {
+  text-align: left;
 }
 .container-nuestraCultura .container_cultura p {
-  padding: 0 3rem 2rem 5rem;
+  padding: 0 3rem 1.3rem 0;
   text-align: left;
-  width: 42em;
+  width: 45rem;
 }
 .container-nuestraCultura .container_cultura a {
-  margin-left: 5rem;
+  margin-left: 0;
 }
 
 .container_cultura-txt_ultimoP {
@@ -458,6 +462,7 @@ footer p {
 /*------------------- PAGINA CONTACTO ------------------- */
 .container-form {
   max-width: 1200px;
+  margin: 2rem auto;
 }
 .container-form .background-img {
   background: url("../imagenes/contacto_foto2.webp") no-repeat 50%;
@@ -466,39 +471,37 @@ footer p {
   height: 560px;
 }
 .container-form form {
-  margin: 2em auto;
-  width: 25rem;
+  margin: 0 auto;
+  width: 28rem;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
-  padding: 1em;
 }
 .container-form form label {
-  margin: 1em 0 0.5em;
-  padding-left: 0.8em;
+  margin: 1rem 0 0.5rem;
+  padding-left: 0.8rem;
   font-family: "Poppins", sans-serif;
 }
 .container-form form input {
   font-size: 0.9rem;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   border: 1px solid #424242;
-  border-radius: 0.8em;
+  border-radius: 0.8rem;
   font-family: "Open Sans", sans-serif;
 }
 .container-form form select {
   font-size: 0.9rem;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   border: 1px solid #424242;
-  border-radius: 0.8em;
+  border-radius: 0.8rem;
   font-family: "Open Sans", sans-serif;
 }
 .container-form form textarea {
   resize: none;
   font-size: 0.9rem;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   border: 1px solid #424242;
-  border-radius: 0.8em;
+  border-radius: 0.8rem;
   height: 100px;
   font-family: "Open Sans", sans-serif;
 }
@@ -508,7 +511,7 @@ footer p {
 }
 
 /*------------------- MOBILE ------------------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /*------------------- TEXTO GENERAL ------------------- */
   .titulo {
     line-height: 3rem;
@@ -526,8 +529,7 @@ footer p {
     flex-flow: column-reverse;
     margin: 0;
   }
-
-  .container-flx .txt p {
+  .container-flx p {
     padding: 0.5rem 1.5rem;
   }
 
@@ -566,7 +568,7 @@ footer p {
     margin: 2rem 0;
   }
   header nav .nav-list li a {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
   header #menu:target {
     left: 0;
@@ -578,26 +580,22 @@ footer p {
     left: 1rem;
     top: 1rem;
   }
-  header .close {
-    left: 0;
-    top: 0;
-  }
   header .logo1 {
     width: 12.5rem;
-    margin: 0.5rem 1rem 1rem 0;
+    margin: 0.5rem 1rem 0 0;
     margin-left: 10rem;
   }
 
   /*------------------- FOOTER ------------------- */
   footer .logo2 {
     width: 10rem;
-    margin-top: 0.5rem;
+    margin: 0.5rem 2rem 0 0;
   }
   footer p {
     display: none;
   }
   footer i {
-    font-size: 30px;
+    font-size: 2rem;
     padding: 0 0 0.3rem 2rem;
   }
 
@@ -636,9 +634,9 @@ footer p {
     gap: 1rem 1rem;
   }
   .ventas .adomicilio .adomicilio-iconos div img {
-    width: 4.5rem;
+    width: 4rem;
   }
-  .ventas .adomicilio div p {
+  .ventas .adomicilio .adomicilio-iconos div p {
     font-size: 0.9rem;
   }
 
@@ -682,6 +680,12 @@ footer p {
   .container-nuestraCultura .container_spotify {
     display: none;
   }
+  .container-nuestraCultura .container_cultura {
+    padding-left: 0;
+  }
+  .container-nuestraCultura .container_cultura h2 {
+    text-align: center;
+  }
   .container-nuestraCultura .container_cultura p {
     padding: 0.5rem 1.5rem;
     text-align: center;
@@ -699,5 +703,209 @@ footer p {
 
   .nuestra-historia .container-flx {
     margin-bottom: 1.5rem;
+  }
+}
+/*------------------- TABLET ------------------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*------------------- TEXTO GENERAL ------------------- */
+  .titulo {
+    line-height: 3rem;
+    padding: 1rem 0 0.5rem 0;
+  }
+
+  .subtitulo {
+    margin: 1.5rem auto;
+    padding: 0 2rem;
+  }
+
+  /*------------------- CONTAINERS Y GALERIAS ------------------- */
+  .container-flx {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .container-flx .txt {
+    width: 85%;
+  }
+  .container-flx p {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .galeria {
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+
+  .img {
+    width: 350px;
+    height: 250px;
+  }
+
+  .galeria__foto-container {
+    margin: 1rem;
+  }
+
+  /*------------------- NAVBAR ------------------- */
+  header {
+    justify-content: space-around;
+  }
+  header nav {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #c5c5c5;
+    transition: left 0.5s;
+    z-index: 3;
+  }
+  header nav ul {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul li {
+    margin: 3rem 0;
+  }
+  header nav .nav-list li a {
+    font-size: 3rem;
+  }
+  header #menu:target {
+    left: 0;
+  }
+  header .icon {
+    display: block;
+    width: 3rem;
+  }
+  header .close {
+    position: absolute;
+    left: 5rem;
+    top: 1.5rem;
+  }
+  header .logo1 {
+    width: 12.5rem;
+    margin: 0.5rem 1rem 0 0;
+    margin-left: 10rem;
+  }
+
+  /*------------------- FOOTER ------------------- */
+  footer .logo2 {
+    width: 12rem;
+    margin: 0.5rem 8rem 0 0;
+  }
+  footer p {
+    display: none;
+  }
+  footer i {
+    font-size: 2.5rem;
+    padding: 0 2rem 0.5rem 2rem;
+  }
+
+  /*------------------- INDEX - HERO ------------------- */
+  .hero {
+    margin-bottom: 3.5rem;
+  }
+  .hero .hero-text .hero-link {
+    display: flex;
+    margin: 3rem auto 0 auto;
+  }
+  .hero .hero-text h1 {
+    font-size: 4.5rem;
+    width: 40rem;
+    line-height: 5rem;
+  }
+
+  /*------------------- INDEX - VENTAS ------------------- */
+  .ventas {
+    margin-top: 3.5rem;
+    padding: 1.5rem 1rem 3rem 1rem;
+  }
+  .ventas .puntos-venta {
+    display: none;
+  }
+  .ventas .adomicilio {
+    padding: 2rem;
+  }
+  .ventas .adomicilio h3 {
+    font-size: 2.5rem;
+  }
+  .ventas .adomicilio .subtitulo {
+    font-size: 1.5rem;
+  }
+  .ventas .adomicilio .adomicilio-iconos div {
+    margin-top: 1rem;
+  }
+  .ventas .adomicilio .adomicilio-iconos div img {
+    width: 4.5rem;
+    margin-right: 1rem;
+  }
+  .ventas .adomicilio .adomicilio-iconos div p {
+    font-size: 1.25rem;
+    width: 14rem;
+  }
+
+  /*------------------- INDEX - REMERAS ------------------- */
+  .index__final-container {
+    background-size: cover;
+    background-position: 15% 50%;
+  }
+  .index__final-container .index__final-content {
+    margin-right: 2rem;
+    padding-top: 19rem;
+  }
+  .index__final-container .index__final-content .titulo {
+    text-align: right;
+    max-width: 30rem;
+    color: black;
+  }
+  .index__final-container .index__final-content p {
+    display: none;
+  }
+  .index__final-container .index__final-content .index__final-content-btn {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+  }
+
+  /*------------------- PAGINA CONTACTO ------------------- */
+  .container-form .background-img {
+    display: none;
+  }
+  .container-form form {
+    margin: 2.5rem auto;
+    width: 30rem;
+    max-width: 1000px;
+    font-size: 1rem;
+  }
+
+  /*------------------- PAGINA NOSOTROS ------------------- */
+  .nuestra-historia .container-flx {
+    margin-bottom: 1.5rem;
+  }
+
+  .container-nuestraCultura .container_spotify {
+    display: none;
+  }
+  .container-nuestraCultura .container_cultura {
+    padding-left: 0;
+  }
+  .container-nuestraCultura .container_cultura h2 {
+    text-align: center;
+  }
+  .container-nuestraCultura .container_cultura p {
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    width: auto;
+  }
+  .container-nuestraCultura .container_cultura .container_cultura_btn {
+    display: flex;
+    justify-content: center;
+  }
+  .container-nuestraCultura .container_cultura .container_cultura_btn a {
+    margin: 1rem;
   }
 }
